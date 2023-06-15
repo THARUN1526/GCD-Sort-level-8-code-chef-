@@ -1,0 +1,15 @@
+
+Here is a brief explanation of the code you provided:
+
+1. The variable `t` is read from input, representing the number of test cases.
+2. The code then enters a loop that iterates `t` times.
+3. Inside the loop, the variable `n` is read from input, representing the length of the array.
+4. The array `a` is read from input using `map(int, input().split())`, which splits the input line into individual integers and converts them to a list of integers.
+5. The variable `valid` is initialized as `True`.
+6. The code enters another loop that iterates from index 1 to `n-1` (excluding the first and last elements of the array).
+7. Inside this loop, there is a while loop that continues as long as `a[i]` is greater than `a[i+1]`.
+8. Within the while loop, the code checks if the greatest common divisor (GCD) of `a[i-1]` and `a[i]` is equal to `a[i]`. If it is, the while loop breaks; otherwise, the code updates `a[i]` to the GCD of `a[i-1]` and `a[i]`.
+9. After exiting the while loop, the code checks if `a[i]` is less than `a[i-1]` or greater than `a[i+1]`. If either condition is true, `valid` is set to `False`, and the loop is broken.
+10. Finally, outside the loop, the code checks if the last element of the array, `a[n-1]`, is less than `a[n-2]`. If it is, `valid` is set to `False`.
+11. Depending on the value of `valid`, the code prints either "YES" or "NO" to indicate whether the array can be sorted using the given operation.
+
